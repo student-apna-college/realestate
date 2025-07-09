@@ -654,6 +654,61 @@ button:hover:not(:disabled) {
 }
 
 
+.container-home {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.logo-section, .logo-content {
+  flex: 1;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .container-home {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .carousel-image {
+    height: 200px !important;
+  }
+
+  .logo-section img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .video-overlay-content h1,
+  .video-overlay-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .video-overlay-content p {
+    font-size: 1rem;
+  }
+}
+
+.carousel-image {
+  height: 400px;
+  object-fit: cover;
+}
+
+.video-overlay-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 
 
 
