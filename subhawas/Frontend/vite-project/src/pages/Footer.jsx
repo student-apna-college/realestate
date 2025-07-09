@@ -12,9 +12,9 @@ export default function Footer() {
           {/* About Section */}
            <div className="col-12 col-md-4 mb-4 text-center">
             <img src={weblogo} alt="LocalMart logo" className="footer-logo mb-3" />
-            <h5>About BlendBaba</h5>
+            <h5>About ShubhAwas</h5>
             <p>
-              BlendBaba is your one-stop online store for all your shopping needs. Quality products, best prices, and fast delivery.
+              ShubhAwas is your one-stop online store for all your shopping needs. Quality products, best prices, and fast delivery.
             </p>
           </div>
 
@@ -33,11 +33,11 @@ export default function Footer() {
           <div className="col-6 col-md-2 mb-4">
             <h6>Quick Links</h6>
             <ul className="list-unstyled">
-              <li><Link to="/" className="text-light text-decoration-none">Shop</Link></li>
+              <li><Link to="/" className="text-light text-decoration-none">Company</Link></li>
               <li><Link to="/about" className="text-light text-decoration-none">About Us</Link></li>
-              <li><Link to="/vendor-onboarding-guide" className="text-light text-decoration-none">Vendor Onboarding Guide</Link></li>
+              <li><Link to="/vendor-onboarding-guide" className="text-light text-decoration-none">Client Onboarding Guide</Link></li>
               <li><Link to="/terms" className="text-light text-decoration-none">Terms & Conditions</Link></li>
-               <li><Link to="/ragister-form" className="text-light text-decoration-none">Register Shop Here</Link></li>
+               <li><Link to="/ragister-form" className="text-light text-decoration-none">Register Company Here</Link></li>
             </ul>
           </div>
 
@@ -58,7 +58,7 @@ export default function Footer() {
                 <i className="bi bi-linkedin"></i>
               </Link>
             </div>
-            <p className="mt-3 small">&copy; {new Date().getFullYear()} BlendBaba. All rights reserved.</p>
+            <p className="mt-3 small">&copy; {new Date().getFullYear()} ShubhAwas. All rights reserved.</p>
           </div>
         </div>
       </div>

@@ -6,125 +6,139 @@ const TermsConditions = () => {
   return (
     <div className="container py-5">
       <h1 className="mb-4 text-center">Terms & Conditions</h1>
-      
 
       <section className="mb-4">
-        <h4>Welcome to BlendBaba!</h4>
+        <h4>Welcome to ShubhAwas Real Estate!</h4>
         <p>
-          These Terms and Conditions ("Terms") govern your access to and use of our website, services, and tools.
-          By accessing or registering a shop on our platform, you agree to comply with and be bound by these Terms.
+          These Terms and Conditions ("Terms") govern your access to and use of our real estate platform, services, and tools. 
+          By accessing or listing a property on our platform, you agree to comply with and be bound by these Terms. 
+          Our goal is to provide a secure and fraud-free environment for all users.
         </p>
       </section>
 
       <section className="mb-4">
         <h5>1. Eligibility</h5>
         <ul>
-          <li>You must be at least 18 years old.</li>
-          <li>You must provide accurate and complete business details.</li>
-          <li>You must comply with all applicable laws and regulations.</li>
+          <li>You must be at least 18 years old to list or inquire about properties.</li>
+          <li>You must provide valid identity verification (e.g., Aadhaar, PAN) during registration.</li>
+          <li>You must comply with all applicable real estate laws and regulations in India.</li>
         </ul>
       </section>
 
       <section className="mb-4">
-        <h5>2. Account and Shop Registration</h5>
+        <h5>2. Account Registration</h5>
         <ul>
-          <li>You are responsible for maintaining the confidentiality of your account and password.</li>
-          <li>You must not impersonate any other person or use fake information.</li>
-          <li>All shop information provided must be true, current, and complete.</li>
+          <li>You are responsible for maintaining the security of your account credentials.</li>
+          <li>You must not impersonate others or use false information.</li>
+          <li>All personal and property details submitted must be accurate and verifiable.</li>
         </ul>
       </section>
 
       <section className="mb-4">
-        <h5>3. Listing Products</h5>
+        <h5>3. Property Listings</h5>
         <ul>
-          <li>You may list genuine and legally permitted products only.</li>
-          <li>Descriptions, pricing, and images must be accurate and not misleading.</li>
-          <li>Illegal, counterfeit, or prohibited items are strictly banned.</li>
+          <li>Only genuine and legally owned properties may be listed.</li>
+          <li>Property details (e.g., price, location, documents) must be honest and up-to-date.</li>
+          <li>Uploading fraudulent or misleading listings may lead to legal action.</li>
         </ul>
       </section>
 
       <section className="mb-4">
-        <h5>4. Payments</h5>
+        <h5>4. Documentation & Verification</h5>
         <ul>
-          <li>Currently, all transactions are handled offline between the customer and the shop.</li>
-          <li>BlendBaba is not responsible for any payment disputes, fraud, or failed transactions.</li>
-          <li>Sellers must ensure clarity on price, delivery, and payment terms with customers.</li>
+          <li>All sellers must submit ownership proof and government-approved property documents.</li>
+          <li>Buyers may request site visits and document verification through secure channels.</li>
+          <li>We may verify listings manually or via third-party verification partners.</li>
         </ul>
       </section>
 
       <section className="mb-4">
-        <h5>5. Commission (If Applicable)</h5>
+        <h5>5. Payments & Transactions</h5>
         <ul>
-          <li>If a commission model is introduced, you will be informed prior to enforcement.</li>
-          <li>You agree to pay any applicable service charges or commissions for using the platform.</li>
+          <li>We recommend that all monetary transactions happen via verified payment gateways or registered agents.</li>
+          <li>ShubhAwasis not responsible for payments made directly between buyer and seller.</li>
+          <li>Never pay any booking amount without confirming documents and seller identity.</li>
         </ul>
       </section>
 
       <section className="mb-4">
-        <h5>6. Seller Conduct</h5>
+        <h5>6. Fraud Prevention Policy</h5>
         <ul>
-          <li>Deliver products as promised.</li>
-          <li>Handle customer service and complaints professionally.</li>
-          <li>Avoid spam, fraud, or unethical marketing.</li>
-        </ul>
-        <p>Failure to adhere may result in account suspension or termination.</p>
-      </section>
-
-      <section className="mb-4">
-        <h5>7. Intellectual Property</h5>
-        <ul>
-          <li>You retain rights to your shop content, but grant us a license to display and promote it.</li>
-          <li>You must not upload content that infringes on copyrights or trademarks.</li>
+          <li>Scammers or users providing fake property information will be banned permanently.</li>
+          <li>Suspected fraud will be reported to the concerned law enforcement authorities.</li>
+          <li>We reserve the right to remove any suspicious listing without prior notice.</li>
         </ul>
       </section>
 
       <section className="mb-4">
-        <h5>8. Platform Rights</h5>
+        <h5>7. User Conduct</h5>
         <ul>
-          <li>We may suspend or remove your shop or content at our sole discretion for violations of policies.</li>
-          <li>We may modify or discontinue our services at any time with or without notice.</li>
+          <li>All users must behave respectfully with others on the platform.</li>
+          <li>Harassment, abuse, or unsolicited messages are strictly prohibited.</li>
+          <li>Users must follow ethical business and communication practices.</li>
         </ul>
       </section>
 
       <section className="mb-4">
-        <h5>9. Disclaimer</h5>
+        <h5>8. Intellectual Property</h5>
         <ul>
-          <li>We do not guarantee any sales, visibility, or business outcomes.</li>
-          <li>We are not liable for product disputes, damages, or buyer actions.</li>
+          <li>All content you upload (images, videos, descriptions) must be your own or authorized for use.</li>
+          <li>You grant us the right to display and promote your property listings.</li>
         </ul>
       </section>
 
       <section className="mb-4">
-        <h5>10. Privacy Policy</h5>
+        <h5>9. Platform Rights</h5>
         <ul>
-          <li>Your information is handled as per our Privacy Policy.</li>
-          <li>You consent to receive platform-related communications via email or other methods.</li>
+          <li>We may update or remove listings at our sole discretion.</li>
+          <li>We may update services, features, or fees at any time with notice.</li>
         </ul>
       </section>
 
       <section className="mb-4">
-        <h5>11. Termination</h5>
+        <h5>10. Limitation of Liability</h5>
         <ul>
-          <li>You may deactivate your account at any time.</li>
-          <li>We reserve the right to terminate any account without notice in case of violation of our terms.</li>
+          <li>We are not a broker or property dealer. We act only as a listing and discovery platform.</li>
+          <li>We do not guarantee property sales, rentals, or returns on investment.</li>
+          <li>We are not responsible for losses due to fraudulent interactions between users.</li>
         </ul>
       </section>
 
       <section className="mb-4">
-        <h5>12. Changes to Terms</h5>
-        <p>We may update these Terms from time to time. Continued use of the platform means you accept the updated Terms.</p>
+        <h5>11. Privacy Policy</h5>
+        <ul>
+          <li>Your data is handled securely and in accordance with our Privacy Policy.</li>
+          <li>We do not sell or misuse your data.</li>
+          <li>You may receive important alerts via email or phone related to your listings or interests.</li>
+        </ul>
       </section>
 
       <section className="mb-4">
-        <h5>13. Contact Us/Ragister shop</h5>
+        <h5>12. Termination</h5>
         <ul>
-          <li>📧 Email: <a href="mailto:support@sabkidukan.com">devender140196@gmail.com</a></li>
+          <li>You may deactivate your account anytime from settings.</li>
+          <li>We may suspend or terminate accounts found violating our fraud prevention policies or terms.</li>
+        </ul>
+      </section>
+
+      <section className="mb-4">
+        <h5>13. Changes to Terms</h5>
+        <p>
+          We may revise these Terms periodically. Continued use of the platform after updates implies acceptance of the revised terms.
+        </p>
+      </section>
+
+      <section className="mb-4">
+        <h5>14. Contact Us / Report a Fraud</h5>
+        <ul>
+          <li>📧 Email: <a href="mailto:devender140196@gmail.com">devender140196@gmail.com</a></li>
           <li>📞 Phone: +91-9717252925</li>
+          <li>To report a fraudulent listing, email us with the listing link and evidence.</li>
         </ul>
       </section>
-      <Footer></Footer>
+
+      <Footer />
     </div>
-    
   );
 };
 

@@ -536,33 +536,52 @@ export default function CompanyProperties() {
       </Modal>
     </Container>
 
- <div
-  className="container my-4 p-4"
-  style={{  borderRadius: '10%' }}
->
+ <div className="container my-4 p-3" style={{ borderRadius: '10px' }}>
   <div className="row g-4 justify-content-center">
+    {/* First Card */}
     <div className="col-12 col-md-6">
       <div
-        className="p-4 shadow text-white"
+        className="p-4 shadow text-white h-100"
         style={{
-          background: 'rgb(174, 132, 209)',
-          borderRadius: '20%',
-          height: '200px',
+          background: 'rgb(231, 208, 197)',
+          borderRadius: '12px',
         }}
       >
-       <h1>That's Great </h1>
+        <p style={{ fontSize: '1.5rem', lineHeight: '1.6', }}>
+          Our journey began not with listings,{' '}
+          <span style={{ color: "#3498DB", fontWeight: "bold" }}>
+            but with listening. Listening to the frustrations of buyers
+          </span>{' '}
+          tired of scattered information, to the dreams of sellers looking to
+          reach the right audience, and to the heartbeat of the industry that
+          craved innovation. We responded with a platform{' '}
+          <span style={{ color: "#3498DB", fontWeight: "bold" }}>
+            that offers more than just
+          </span>{' '}
+          properties—it offers possibilities.
+        </p>
       </div>
     </div>
+
+    {/* Second Card */}
     <div className="col-12 col-md-6">
       <div
-        className="p-4 shadow text-white"
+        className="p-4 shadow text-white h-100"
         style={{
           background: 'rgb(133, 145, 204)',
-          borderRadius: '20%',
-          height: '200px',
+          borderRadius: '12px',
         }}
       >
-        hi2sdfasdfasdfasfasdf
+        <p style={{ fontSize: '1.5rem', lineHeight: '1.6' }}>
+          In a world constantly shifting and growing, where cities rise and
+          lifestyles evolve, owning a place to call home remains one of the
+          deepest human desires—one that transcends generations, cultures, and
+          borders. Our real estate platform was born from this timeless
+          aspiration, crafted with passion, purpose, and precision. We believe a
+          home is not just a structure of bricks and mortar, but a foundation
+          where dreams take root, families blossom, and memories echo through
+          time.
+        </p>
       </div>
     </div>
   </div>
