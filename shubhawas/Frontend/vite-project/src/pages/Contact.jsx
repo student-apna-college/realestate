@@ -133,7 +133,7 @@ const Contact = () => {
               <h4 className="mb-3">Get in Touch</h4>
               <p><strong>Email:</strong> devender140196@gmail.com</p>
               <p><strong>Phone:</strong> +91 9717252925</p>
-              <p><strong>Address:</strong> BlendBaba @ Delhi</p>
+              
               <hr />
               <p>Our support team is available 24x7 to help with orders, returns, or product inquiries.</p>
             </div>

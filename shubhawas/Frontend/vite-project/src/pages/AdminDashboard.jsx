@@ -23,12 +23,12 @@ export default function AdminDashboard() {
   }, [user]);
 
   if (userLoading || loading) return <div>Loading...</div>;
-  if (!details || !details.shop) return <div>No shop details available.</div>;
+  if (!details || !details.shop) return <div>No Company details available.</div>;
 
   return (
     <div>
       <h2>Admin Dashboard</h2>
-      <h3>Shop: {details.shop.name || 'N/A'}</h3>
+      <h3>Company: {details.shop.name || 'N/A'}</h3>
       {details.shop.image && (
   <img
     src={`http://localhost:5000/uploads/shop-images/${details.shop.image}`}

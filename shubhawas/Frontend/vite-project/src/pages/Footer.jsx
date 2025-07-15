@@ -14,7 +14,7 @@ export default function Footer() {
             <img src={weblogo} alt="LocalMart logo" className="footer-logo mb-3" />
             <h5>About ShubhAwas</h5>
             <p>
-              ShubhAwas is your one-stop online store for all your shopping needs. Quality products, best prices, and fast delivery.
+              ShubhAwas is your one-stop online and secure Purchase property for all type in  best prices, and fast registration.
             </p>
           </div>
 
@@ -23,8 +23,8 @@ export default function Footer() {
             <h6>Customer Service</h6>
             <ul className="list-unstyled">
               <li><Link to="/contact" className="text-light text-decoration-none">Help & FAQs</Link></li>
-              <li><Link to="/" className="text-light text-decoration-none">Shipping & Delivery</Link></li>
-              <li><Link to="" className="text-light text-decoration-none">Returns & Exchanges</Link></li>
+              
+              
               <li><Link to="/contact" className="text-light text-decoration-none">Contact Us</Link></li>
             </ul>
           </div>

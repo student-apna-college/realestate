@@ -57,10 +57,7 @@ export default function Navbar() {
               </Link>
             </li>
            <li className="nav-item">
-  <Link className="nav-link" to="/cart">
-    <Cart size={20} className="me-1 mb-1 align-text-bottom" />
-    Cart
-  </Link>
+ 
 
 </li>
 
@@ -76,14 +73,14 @@ export default function Navbar() {
               <>
                 <li className="nav-item">
                   <Link className="nav-link" to="/admin/create-product">
-                    Create Product
+                    Create Property
                   </Link>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <Link className="nav-link" to="/admin/all-orders">
                     All Orders
                   </Link>
-                </li>
+                </li> */}
               </>
             )}
 
@@ -104,7 +101,7 @@ export default function Navbar() {
 
 
                 <Link className="nav-link" to="/shop-query">
-                  Shop Query
+                  Company Query
                 </Link>
                 
                 
@@ -116,7 +113,7 @@ export default function Navbar() {
 
                 <li className="nav-item">
                 <Link className="nav-link" to="/create-shop">
-                  Create Shops
+                  Create Company
                 </Link> 
               </li>
               </li>

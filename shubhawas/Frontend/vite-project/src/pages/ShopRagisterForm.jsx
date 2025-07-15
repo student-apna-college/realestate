@@ -26,7 +26,7 @@ export default function ShopRegisterForm() {
     setError('');
 
     try {
-      const res = await axios.post('http://localhost:5000/shop/ragister/shopform', formData, {
+      const res = await axios.post('https://realestate-zsnn.onrender.com/shop/ragister/shopform', formData, {
         withCredentials: true,
       });
       setMessage('✅ Shop registered successfully we will update you soon for next step');
@@ -45,10 +45,10 @@ export default function ShopRegisterForm() {
 
   return (
     <div className="shop-form-container">
-      <h2>Register Your Shop</h2>
+      <h2>Register Your Company</h2>
       <form onSubmit={handleSubmit} className="shop-form">
         <div className="form-group">
-          <label>Shop Name</label>
+          <label>Company Name</label>
           <input type="text" name="name" value={formData.name} onChange={handleChange} required />
         </div>
         <div className="form-group">
@@ -64,20 +64,10 @@ export default function ShopRegisterForm() {
           <input type="text" name="pan" value={formData.pan} onChange={handleChange} required />
         </div>
         <div className="form-group">
-          <label>Shop Address</label>
+          <label>Company Address</label>
           <input type="text" name="address" value={formData.address} onChange={handleChange} required />
         </div>
-        <div className="form-group">
-          <label>Shop Category</label>
-          <select name="categoryofshop" value={formData.categoryofshop} onChange={handleChange} required>
-            <option value="">Select Category</option>
-            <option value="Grocery">Grocery</option>
-            <option value="Clothing">Clothing</option>
-            <option value="Electronics">Electronics</option>
-            <option value="Construction">Construction</option>
-            <option value="Other">Other</option>
-          </select>
-        </div>
+        
         <button type="submit" className="submit-btn">Submit</button>
       </form>
       {message && <p className="success-msg">{message}</p>}

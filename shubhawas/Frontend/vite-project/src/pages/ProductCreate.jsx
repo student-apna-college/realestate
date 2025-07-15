@@ -360,7 +360,7 @@ export default function PropertyCreate() {
 
               <div className="col-md-4">
                 <label className="form-label text-primary">Price (₹)</label>
-                <input type="number" name="price" value={form.price} onChange={handleChange} required className="form-control bg-dark text-primary border-light" />
+                <input type="text" name="price" value={form.price} onChange={handleChange} required className="form-control bg-dark text-primary border-light" />
               </div>
 
               <div className="col-md-4">

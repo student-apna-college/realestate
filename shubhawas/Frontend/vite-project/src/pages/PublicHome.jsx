@@ -179,11 +179,13 @@ export default function PublicHome() {
                     {company.image && (
                       <Card.Img
                         variant="top"
-                        src={`http://localhost:5000/uploads/company-images/${company.image}`}
+                        src={`/uploads/company-images/${company.image}`}
                         alt={company.name}
                         style={{ height: '180px', objectFit: 'cover' }}
                       />
                     )}
+
+                    
                     <Card.Body>
                       <Card.Title>{company.name}</Card.Title>
                       <Card.Text>Owner: {company.admin?.name || 'Unknown'}</Card.Text>
@@ -204,7 +206,7 @@ export default function PublicHome() {
                           handlecompanyClick(company._id);
                         }}
                       >
-                        View company
+                        View company Properties
                       </Button>
                     </Card.Body>
                   </Card>

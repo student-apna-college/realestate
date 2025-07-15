@@ -3,7 +3,7 @@
 // import axios from '../api/axios';
 // import { toast, ToastContainer } from 'react-toastify';
 // import 'react-toastify/dist/ReactToastify.css';
-// import './All.css';
+import './All.css';
 import Footer from './Footer';
 
 
@@ -178,6 +178,9 @@ import m1 from '../images/rgba.jpg';
 import home from '../images/home.jpg';
 import home1 from '../images/home1.jpg';
 import home2 from '../images/home2.jpg';
+import vid1 from '../images/vid1.mp4'
+import Apartments1 from '../images/Apartments1.jpg'
+import cement  from '../images/cement.jpg'
 
 export default function CompanyProperties() {
   const { companyId } = useParams();
@@ -537,27 +540,28 @@ export default function CompanyProperties() {
     </Container>
 
  <div className="container my-4 p-3" style={{ borderRadius: '10px' }}>
+  
   <div className="row g-4 justify-content-center">
     {/* First Card */}
     <div className="col-12 col-md-6">
       <div
         className="p-4 shadow text-white h-100"
         style={{
-          background: 'rgb(231, 208, 197)',
+          background: 'rgb(236, 231, 231)',
           borderRadius: '12px',
         }}
+        
       >
-        <p style={{ fontSize: '1.5rem', lineHeight: '1.6', }}>
+        <img src={Apartments1} style={{width:'100%' , height:'200px', borderRadius:"10px"}}></img>
+        <p style={{ fontSize: '1.5rem', lineHeight: '1.6', color:"grey", fontWeight:"600"}}>
           Our journey began not with listings,{' '}
-          <span style={{ color: "#3498DB", fontWeight: "bold" }}>
+          <span style={{  fontWeight:"600" }}>
             but with listening. Listening to the frustrations of buyers
           </span>{' '}
           tired of scattered information, to the dreams of sellers looking to
           reach the right audience, and to the heartbeat of the industry that
-          craved innovation. We responded with a platform{' '}
-          <span style={{ color: "#3498DB", fontWeight: "bold" }}>
-            that offers more than just
-          </span>{' '}
+          craved innovation.{' '}
+         {' '}
           properties—it offers possibilities.
         </p>
       </div>
@@ -568,24 +572,41 @@ export default function CompanyProperties() {
       <div
         className="p-4 shadow text-white h-100"
         style={{
-          background: 'rgb(133, 145, 204)',
+          background: 'rgb(235, 230, 230)',
           borderRadius: '12px',
         }}
       >
-        <p style={{ fontSize: '1.5rem', lineHeight: '1.6' }}>
+         <img src={cement } style={{width:'100%' , height:'200px', borderRadius:"10px"}}></img>
+        <p style={{ fontSize: '1.5rem', lineHeight: '1.6', color:"grey", fontWeight:"600"}}>
           In a world constantly shifting and growing, where cities rise and
           lifestyles evolve, owning a place to call home remains one of the
           deepest human desires—one that transcends generations, cultures, and
-          borders. Our real estate platform was born from this timeless
-          aspiration, crafted with passion, purpose, and precision. We believe a
-          home is not just a structure of bricks and mortar, but a foundation
-          where dreams take root, families blossom, and memories echo through
-          time.
+          borders. 
         </p>
       </div>
     </div>
   </div>
+ 
 </div>
+
+ <div className="public-video-container position-relative">
+        <video
+          src={vid1}
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="w-100"
+          style={{ height: 'auto', maxHeight: '400px', objectFit: 'cover' }}
+        />
+        <div className="video-overlay-content text-white text-center">
+          <h1 className="display-4 fw-bold">Welcome to ShubhAwas</h1>
+          <h2 className="display-4 fw-bold">Come and Take your Dream Home Key</h2>
+          <p className="lead">Your trusted destination for online Real Estate</p>
+          <button className="btn btn-primary mt-3">Explore Now</button>
+        </div>
+      </div>
+
 
     <Footer></Footer>
     </>
