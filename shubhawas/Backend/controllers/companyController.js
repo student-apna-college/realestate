@@ -44,35 +44,42 @@ export const getAllCompany = async (req, res) => {
     let companys;
 
     if (req.user && req.user.role === "admin") {
-      companys = await Company.find({ admin: req.user._id }).populate(
-        "admin",
-        "name"
-      );
+      companys = await Company.find({ admin: req.user._id }).populate("admin", "name");
     } else {
       companys = await Company.find().populate("admin", "name");
     }
 
+    console.log("Found companies:", companys.length);
+
     const shopsWithProducts = await Promise.all(
       companys.map(async (company) => {
-        const products = await Property.find({ companyId: company._id }).select(
-          "name price image"
-        );
-        return {
-          ...company._doc,
-          products,
-          category: company.category,
-          createdAt: company.createdAt,
-        };
+        try {
+          console.log("Processing company:", company.name, company._id);
+          const products = await Property.find({ companyId: company._id }).select("name price image");
+          return {
+            ...company._doc,
+            products,
+            category: company.category,
+            createdAt: company.createdAt,
+          };
+        } catch (innerErr) {
+          console.error(`❌ Failed to fetch properties for company ${company.name} (${company._id}):`, innerErr);
+          return {
+            ...company._doc,
+            products: [],
+            category: company.category,
+            createdAt: company.createdAt,
+          };
+        }
       })
     );
 
     res.json(shopsWithProducts);
   } catch (error) {
-    console.error("❌ Error in getAllShops:", error);
+    console.error("❌ REAL ERROR IN getAllCompany:", error);
     res.status(500).json({ message: "Server error" });
   }
 };
-
 
 
 // ✅ Update Shop (SuperAdmin or Shop Admin)

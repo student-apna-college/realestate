@@ -201,7 +201,7 @@ export default function CompanyProperties() {
   const [showModal, setShowModal] = useState(false);
   const [modalImage, setModalImage] = useState('');
 
-  const API_BASE_URL = 'http://localhost:5000';
+  const API_BASE_URL = 'https://realestate-zsnn.onrender.com';
 
   useEffect(() => {
     const fetchProperties = async () => {
@@ -274,9 +274,9 @@ export default function CompanyProperties() {
   return (
     <>
 
-    <Carousel className="custom-carousel">
+    <Carousel className="custom-carousel" data-bs-interval="10000">
         <Carousel.Item>
-          <img className="d-block w-30 carousel-image" src={home} alt="First slide" />
+          <img className="d-block w-30 carousel-image" src={home} alt="First slide"  />
           <Carousel.Caption>
             <h3 style={{ fontWeight: 'bold', color: '#ffc107' }}>Welcome to ShubhAwas</h3>
             <p>Come and Take your Dream Home Key.</p>
@@ -427,7 +427,7 @@ export default function CompanyProperties() {
                 <Col key={property._id} md={6} xl={6} className="mb-4">
                   <Card className="shadow-lg border-0 h-100">
                     {property.images && property.images.length > 0 ? (
-                      <div style={{ height: '230px', cursor: 'pointer' }}>
+                      <div style={{ height: '400px', cursor: 'pointer' }}>
                         <div
                           id={`carousel-${property._id}`}
                           className="carousel slide h-100"
@@ -468,7 +468,7 @@ export default function CompanyProperties() {
                     )}
 
                     <Card.Body className="p-3">
-                      <Card.Title className="text-dark fs-5 fw-bold mb-3">{property.title}</Card.Title>
+                      <Card.Title className="text-dark fs-5 fw-bold mb-3">Description:{property.title}</Card.Title>
 
                       <ListGroup variant="flush" className="mb-2 small">
                         <ListGroup.Item><strong>Price:</strong> ₹{property.price?.toLocaleString() || 'N/A'}</ListGroup.Item>

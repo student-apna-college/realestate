@@ -181,7 +181,7 @@ export default function PublicHome() {
                         variant="top"
                         src={`/uploads/company-images/${company.image}`}
                         alt={company.name}
-                        style={{ height: '180px', objectFit: 'cover' }}
+                        style={{ height: '280px', objectFit: 'cover' }}
                       />
                     )}
 
